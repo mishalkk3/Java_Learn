@@ -28,7 +28,11 @@ public class Test1 {
         Files.lines(cwd).map(String::toLowerCase).filter(s -> s.contains("a")).forEach(System.out::println);
          */
 
-        /*
+        /* Path cwd = Paths.get("./resources/data1.txt");
+        List<String> list = List.of("Apple","Boy","Cat","Dog","Ant");
+        Files.write(cwd,list);
+
          */
     }
 }
+

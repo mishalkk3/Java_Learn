@@ -3,7 +3,7 @@ package com.mishal.learnspring.game;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class ContraGame implements GamingConsole{
 
     @Override

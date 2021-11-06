@@ -13,11 +13,6 @@ public class GameRunner {
         this.game = game;
     }
 
-    public void setGame(GamingConsole game) {
-        System.out.println("Using setter");
-        this.game = game;
-    }
-
     public void runGame() {
         game.up();
         game.down();

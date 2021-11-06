@@ -14,7 +14,7 @@ public class LearnSpringApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(LearnSpringApplication.class, args);
 
-		GameRunner marioRunner = context.getBean(GameRunner.class);
+		GameRunner gameRunner = context.getBean(GameRunner.class);
 
 		//MarioGame marioGame = new MarioGame();
 		//ContraGame contraGame = new ContraGame();
@@ -22,7 +22,7 @@ public class LearnSpringApplication {
 		//GameRunner marioRunner = new GameRunner(marioGame);
 		//GameRunner contraRunner = new GameRunner(contraGame);
 
-		marioRunner.runGame();
+		gameRunner.runGame();
 		//System.out.println("-------------------------------------------------");
 		//contraRunner.runGame();
 

@@ -3,8 +3,8 @@ package com.mishal.learnspring.game;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
-@Primary
+//@Component
+//@Primary
 public class PacManGame implements GamingConsole{
 
     @Override

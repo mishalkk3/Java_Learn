@@ -1,0 +1,5 @@
+Multi threading in Java is the most essential feature that each and every Java developer should understand and be able to confidently apply it in solving complex programming problems where concurrent execution is a must. With parallel processing there comes a risk, i.e. shared mutability and the ability of the developer to solve concurrency problems. 
+
+Thanks to the Java programming language that it makes the mighty multi-threaded application development a cake walk, if you assimilate few keys or core concepts you will be able to confidently design multi threaded applications with ease.
+
+To design multi threaded applications developers need to look at it through a different perspective i.e. change the thinking from serial to parallel and it requires some effort. Keeping

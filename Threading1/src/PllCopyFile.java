@@ -21,17 +21,18 @@ class CopyTask implements Runnable {
         }
     }
 }
+
 public class PllCopyFile {
 
     public static void main(String[] args) throws IOException {
 
-        String sourceFile1 = "a.txt";
-        String sourceFile2 = "b.txt";
+        String sourceFile1 = "sample/a.txt";
+        String sourceFile2 = "sample/b.txt";
 
-        String destFile1 = "c.txt";
-        String destFile2 = "d.txt";
+        String destFile1 = "sample/c.txt";
+        String destFile2 = "sample/d.txt";
 
-        ExecutorService executor = Executors.newFixedThreadPool(5);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
         executor.execute(new CopyTask(sourceFile1,destFile1));
         executor.execute(new CopyTask(sourceFile2, destFile2));
 

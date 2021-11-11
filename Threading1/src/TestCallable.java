@@ -29,10 +29,18 @@ public class TestCallable {
 
         ExecutorService executor = Executors.newFixedThreadPool(1);
 
+//        Future<Integer> future = executor.submit(new Callable<Integer>() {
+//            @Override
+//            public Integer call() throws Exception {
+//                return MyMath.add(x,y);
+//            }
+//        });
+
         Future<Integer> future = executor.submit(new AddTask(x,y));
         while (future.isDone()); //wait
 
         int z = future.get();
         System.out.println("Result = "+z);
+        executor.shutdown();
     }
 }
